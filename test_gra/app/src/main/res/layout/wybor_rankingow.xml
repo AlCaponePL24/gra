@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#222222"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/menu"
+        android:textColor="#00ff00"
+        android:background="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="MENU"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:textColor="#00ff00"
+        android:background="#000000"
+        android:id="@+id/ranking_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        android:text="4-BIT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/ranking_8"
+        android:textColor="#00ff00"
+        android:background="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        android:text="8-BIT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ranking_4" />
+
+    <Button
+        android:id="@+id/ranking_12"
+        android:textColor="#00ff00"
+        android:background="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        android:text="12-BIT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ranking_8" />
+
+    <Button
+        android:id="@+id/ranking_16"
+        android:textColor="#00ff00"
+        android:background="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        android:text="16-BIT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ranking_12" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:textColor="#00ff00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginRight="125dp"
+        android:text="Wybierz dla którego trybu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:textColor="#00ff00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:text="Rankingi"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu" />
+
+</android.support.constraint.ConstraintLayout>
