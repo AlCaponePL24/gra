@@ -35,12 +35,6 @@ public class bazaDanych extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public Cursor dane() {
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor res = db.rawQuery("SELECT * FROM " + nazwaBazy + " ORDER BY " + KOL_2 + " DESC", null);
-        return res;
-    }
-
     public boolean dopiszDane(String score) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -51,6 +45,12 @@ public class bazaDanych extends SQLiteOpenHelper {
 
     }
 
+    public Cursor dane() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("SELECT * FROM " + nazwaBazy + " ORDER BY " + KOL_2 + " DESC", null);
+        return res;
+    }
+
     public boolean aktualizujDane(String id, String score) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -59,4 +59,5 @@ public class bazaDanych extends SQLiteOpenHelper {
         db.update(nazwaBazy, contentValues, "ID = ?", new String[] {id});
         return true;
     }
+
 }
